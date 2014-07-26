@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054D66551984089800FE29CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66541984089800FE29CA /* Foundation.framework */; };
+		054D66571984089800FE29CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66561984089800FE29CA /* CoreGraphics.framework */; };
+		054D66591984089800FE29CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66581984089800FE29CA /* UIKit.framework */; };
+		054D665F1984089800FE29CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 054D665D1984089800FE29CA /* InfoPlist.strings */; };
+		054D66611984089800FE29CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D66601984089800FE29CA /* main.m */; };
+		054D66651984089800FE29CA /* WWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D66641984089800FE29CA /* WWAppDelegate.m */; };
+		054D66681984089800FE29CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054D66661984089800FE29CA /* Main.storyboard */; };
+		054D666B1984089800FE29CA /* WWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D666A1984089800FE29CA /* WWViewController.m */; };
+		054D666D1984089800FE29CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054D666C1984089800FE29CA /* Images.xcassets */; };
+		054D66741984089800FE29CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66731984089800FE29CA /* XCTest.framework */; };
+		054D66751984089800FE29CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66541984089800FE29CA /* Foundation.framework */; };
+		054D66761984089800FE29CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66581984089800FE29CA /* UIKit.framework */; };
+		054D667E1984089800FE29CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 054D667C1984089800FE29CA /* InfoPlist.strings */; };
+		054D66801984089800FE29CA /* whoswhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D667F1984089800FE29CA /* whoswhoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		054D66771984089800FE29CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054D66491984089800FE29CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 054D66501984089800FE29CA;
+			remoteInfo = whoswho;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054D66511984089800FE29CA /* whoswho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whoswho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		054D66541984089800FE29CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		054D66561984089800FE29CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		054D66581984089800FE29CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		054D665C1984089800FE29CA /* whoswho-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whoswho-Info.plist"; sourceTree = "<group>"; };
+		054D665E1984089800FE29CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		054D66601984089800FE29CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		054D66621984089800FE29CA /* whoswho-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whoswho-Prefix.pch"; sourceTree = "<group>"; };
+		054D66631984089800FE29CA /* WWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
+		054D66641984089800FE29CA /* WWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWAppDelegate.m; sourceTree = "<group>"; };
+		054D66671984089800FE29CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		054D66691984089800FE29CA /* WWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWViewController.h; sourceTree = "<group>"; };
+		054D666A1984089800FE29CA /* WWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWViewController.m; sourceTree = "<group>"; };
+		054D666C1984089800FE29CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		054D66721984089800FE29CA /* whoswhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whoswhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		054D66731984089800FE29CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		054D667B1984089800FE29CA /* whoswhoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whoswhoTests-Info.plist"; sourceTree = "<group>"; };
+		054D667D1984089800FE29CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		054D667F1984089800FE29CA /* whoswhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whoswhoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		054D664E1984089800FE29CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D66571984089800FE29CA /* CoreGraphics.framework in Frameworks */,
+				054D66591984089800FE29CA /* UIKit.framework in Frameworks */,
+				054D66551984089800FE29CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054D666F1984089800FE29CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D66741984089800FE29CA /* XCTest.framework in Frameworks */,
+				054D66761984089800FE29CA /* UIKit.framework in Frameworks */,
+				054D66751984089800FE29CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		054D66481984089800FE29CA = {
+			isa = PBXGroup;
+			children = (
+				054D665A1984089800FE29CA /* whoswho */,
+				054D66791984089800FE29CA /* whoswhoTests */,
+				054D66531984089800FE29CA /* Frameworks */,
+				054D66521984089800FE29CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		054D66521984089800FE29CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054D66511984089800FE29CA /* whoswho.app */,
+				054D66721984089800FE29CA /* whoswhoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		054D66531984089800FE29CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054D66541984089800FE29CA /* Foundation.framework */,
+				054D66561984089800FE29CA /* CoreGraphics.framework */,
+				054D66581984089800FE29CA /* UIKit.framework */,
+				054D66731984089800FE29CA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		054D665A1984089800FE29CA /* whoswho */ = {
+			isa = PBXGroup;
+			children = (
+				054D66631984089800FE29CA /* WWAppDelegate.h */,
+				054D66641984089800FE29CA /* WWAppDelegate.m */,
+				054D66661984089800FE29CA /* Main.storyboard */,
+				054D66691984089800FE29CA /* WWViewController.h */,
+				054D666A1984089800FE29CA /* WWViewController.m */,
+				054D666C1984089800FE29CA /* Images.xcassets */,
+				054D665B1984089800FE29CA /* Supporting Files */,
+			);
+			path = whoswho;
+			sourceTree = "<group>";
+		};
+		054D665B1984089800FE29CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				054D665C1984089800FE29CA /* whoswho-Info.plist */,
+				054D665D1984089800FE29CA /* InfoPlist.strings */,
+				054D66601984089800FE29CA /* main.m */,
+				054D66621984089800FE29CA /* whoswho-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		054D66791984089800FE29CA /* whoswhoTests */ = {
+			isa = PBXGroup;
+			children = (
+				054D667F1984089800FE29CA /* whoswhoTests.m */,
+				054D667A1984089800FE29CA /* Supporting Files */,
+			);
+			path = whoswhoTests;
+			sourceTree = "<group>";
+		};
+		054D667A1984089800FE29CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				054D667B1984089800FE29CA /* whoswhoTests-Info.plist */,
+				054D667C1984089800FE29CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		054D66501984089800FE29CA /* whoswho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054D66831984089800FE29CA /* Build configuration list for PBXNativeTarget "whoswho" */;
+			buildPhases = (
+				054D664D1984089800FE29CA /* Sources */,
+				054D664E1984089800FE29CA /* Frameworks */,
+				054D664F1984089800FE29CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whoswho;
+			productName = whoswho;
+			productReference = 054D66511984089800FE29CA /* whoswho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		054D66711984089800FE29CA /* whoswhoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054D66861984089800FE29CA /* Build configuration list for PBXNativeTarget "whoswhoTests" */;
+			buildPhases = (
+				054D666E1984089800FE29CA /* Sources */,
+				054D666F1984089800FE29CA /* Frameworks */,
+				054D66701984089800FE29CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				054D66781984089800FE29CA /* PBXTargetDependency */,
+			);
+			name = whoswhoTests;
+			productName = whoswhoTests;
+			productReference = 054D66721984089800FE29CA /* whoswhoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		054D66491984089800FE29CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Pauline;
+				TargetAttributes = {
+					054D66711984089800FE29CA = {
+						TestTargetID = 054D66501984089800FE29CA;
+					};
+				};
+			};
+			buildConfigurationList = 054D664C1984089800FE29CA /* Build configuration list for PBXProject "whoswho" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 054D66481984089800FE29CA;
+			productRefGroup = 054D66521984089800FE29CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				054D66501984089800FE29CA /* whoswho */,
+				054D66711984089800FE29CA /* whoswhoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		054D664F1984089800FE29CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D666D1984089800FE29CA /* Images.xcassets in Resources */,
+				054D665F1984089800FE29CA /* InfoPlist.strings in Resources */,
+				054D66681984089800FE29CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054D66701984089800FE29CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D667E1984089800FE29CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		054D664D1984089800FE29CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D66651984089800FE29CA /* WWAppDelegate.m in Sources */,
+				054D66611984089800FE29CA /* main.m in Sources */,
+				054D666B1984089800FE29CA /* WWViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054D666E1984089800FE29CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D66801984089800FE29CA /* whoswhoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		054D66781984089800FE29CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 054D66501984089800FE29CA /* whoswho */;
+			targetProxy = 054D66771984089800FE29CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		054D665D1984089800FE29CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054D665E1984089800FE29CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		054D66661984089800FE29CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054D66671984089800FE29CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		054D667C1984089800FE29CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054D667D1984089800FE29CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		054D66811984089800FE29CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		054D66821984089800FE29CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		054D66841984089800FE29CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "whoswho/whoswho-Prefix.pch";
+				INFOPLIST_FILE = "whoswho/whoswho-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		054D66851984089800FE29CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "whoswho/whoswho-Prefix.pch";
+				INFOPLIST_FILE = "whoswho/whoswho-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		054D66871984089800FE29CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/whoswho.app/whoswho";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "whoswho/whoswho-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "whoswhoTests/whoswhoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		054D66881984089800FE29CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/whoswho.app/whoswho";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "whoswho/whoswho-Prefix.pch";
+				INFOPLIST_FILE = "whoswhoTests/whoswhoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		054D664C1984089800FE29CA /* Build configuration list for PBXProject "whoswho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054D66811984089800FE29CA /* Debug */,
+				054D66821984089800FE29CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054D66831984089800FE29CA /* Build configuration list for PBXNativeTarget "whoswho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054D66841984089800FE29CA /* Debug */,
+				054D66851984089800FE29CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		054D66861984089800FE29CA /* Build configuration list for PBXNativeTarget "whoswhoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054D66871984089800FE29CA /* Debug */,
+				054D66881984089800FE29CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 054D66491984089800FE29CA /* Project object */;
+}
