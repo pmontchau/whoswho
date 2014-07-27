@@ -21,6 +21,8 @@
 		054D66761984089800FE29CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66581984089800FE29CA /* UIKit.framework */; };
 		054D667E1984089800FE29CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 054D667C1984089800FE29CA /* InfoPlist.strings */; };
 		054D66801984089800FE29CA /* whoswhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D667F1984089800FE29CA /* whoswhoTests.m */; };
+		05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A2198532E30096D508 /* WWEmployee.m */; };
+		05A8A1A6198533FF0096D508 /* WWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A5198533FF0096D508 /* WWModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		054D667B1984089800FE29CA /* whoswhoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whoswhoTests-Info.plist"; sourceTree = "<group>"; };
 		054D667D1984089800FE29CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		054D667F1984089800FE29CA /* whoswhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whoswhoTests.m; sourceTree = "<group>"; };
+		05A8A1A1198532E30096D508 /* WWEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWEmployee.h; sourceTree = "<group>"; };
+		05A8A1A2198532E30096D508 /* WWEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployee.m; sourceTree = "<group>"; };
+		05A8A1A4198533FF0096D508 /* WWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWModel.h; sourceTree = "<group>"; };
+		05A8A1A5198533FF0096D508 /* WWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		054D665A1984089800FE29CA /* whoswho */ = {
 			isa = PBXGroup;
 			children = (
+				05A8A1A0198532BE0096D508 /* Model */,
 				054D66631984089800FE29CA /* WWAppDelegate.h */,
 				054D66641984089800FE29CA /* WWAppDelegate.m */,
 				054D66661984089800FE29CA /* Main.storyboard */,
@@ -150,6 +157,17 @@
 				054D667C1984089800FE29CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05A8A1A0198532BE0096D508 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05A8A1A1198532E30096D508 /* WWEmployee.h */,
+				05A8A1A2198532E30096D508 /* WWEmployee.m */,
+				05A8A1A4198533FF0096D508 /* WWModel.h */,
+				05A8A1A5198533FF0096D508 /* WWModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A8A1A6198533FF0096D508 /* WWModel.m in Sources */,
 				054D66651984089800FE29CA /* WWAppDelegate.m in Sources */,
+				05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */,
 				054D66611984089800FE29CA /* main.m in Sources */,
 				054D666B1984089800FE29CA /* WWViewController.m in Sources */,
 			);
@@ -457,6 +477,7 @@
 				054D66851984089800FE29CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054D66861984089800FE29CA /* Build configuration list for PBXNativeTarget "whoswhoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +486,7 @@
 				054D66881984089800FE29CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
