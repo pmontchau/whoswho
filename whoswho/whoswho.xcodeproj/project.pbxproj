@@ -23,6 +23,11 @@
 		054D66801984089800FE29CA /* whoswhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D667F1984089800FE29CA /* whoswhoTests.m */; };
 		05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A2198532E30096D508 /* WWEmployee.m */; };
 		05A8A1A6198533FF0096D508 /* WWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A5198533FF0096D508 /* WWModel.m */; };
+		05D5A3671985685D00E45A44 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5A3611985685D00E45A44 /* TFHpple.m */; };
+		05D5A3681985685D00E45A44 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5A3631985685D00E45A44 /* TFHppleElement.m */; };
+		05D5A3691985685D00E45A44 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5A3661985685D00E45A44 /* XPathQuery.m */; };
+		05D5A36B1985807100E45A44 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D5A36A1985807100E45A44 /* libxml2.dylib */; };
+		05D5A36E198581C600E45A44 /* WWHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5A36D198581C600E45A44 /* WWHTMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,15 @@
 		05A8A1A2198532E30096D508 /* WWEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployee.m; sourceTree = "<group>"; };
 		05A8A1A4198533FF0096D508 /* WWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWModel.h; sourceTree = "<group>"; };
 		05A8A1A5198533FF0096D508 /* WWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWModel.m; sourceTree = "<group>"; };
+		05D5A3601985685D00E45A44 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		05D5A3611985685D00E45A44 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		05D5A3621985685D00E45A44 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		05D5A3631985685D00E45A44 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		05D5A3651985685D00E45A44 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		05D5A3661985685D00E45A44 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		05D5A36A1985807100E45A44 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		05D5A36C198581C600E45A44 /* WWHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWHTMLParser.h; sourceTree = "<group>"; };
+		05D5A36D198581C600E45A44 /* WWHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHTMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D5A36B1985807100E45A44 /* libxml2.dylib in Frameworks */,
 				054D66571984089800FE29CA /* CoreGraphics.framework in Frameworks */,
 				054D66591984089800FE29CA /* UIKit.framework in Frameworks */,
 				054D66551984089800FE29CA /* Foundation.framework in Frameworks */,
@@ -85,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051A6BB8198566CC006AB890 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				05D5A35F1985685D00E45A44 /* hpple */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		054D66481984089800FE29CA = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +130,7 @@
 		054D66531984089800FE29CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05D5A36A1985807100E45A44 /* libxml2.dylib */,
 				054D66541984089800FE29CA /* Foundation.framework */,
 				054D66561984089800FE29CA /* CoreGraphics.framework */,
 				054D66581984089800FE29CA /* UIKit.framework */,
@@ -118,6 +142,7 @@
 		054D665A1984089800FE29CA /* whoswho */ = {
 			isa = PBXGroup;
 			children = (
+				051A6BB8198566CC006AB890 /* Libs */,
 				05A8A1A0198532BE0096D508 /* Model */,
 				054D66631984089800FE29CA /* WWAppDelegate.h */,
 				054D66641984089800FE29CA /* WWAppDelegate.m */,
@@ -126,6 +151,8 @@
 				054D666A1984089800FE29CA /* WWViewController.m */,
 				054D666C1984089800FE29CA /* Images.xcassets */,
 				054D665B1984089800FE29CA /* Supporting Files */,
+				05D5A36C198581C600E45A44 /* WWHTMLParser.h */,
+				05D5A36D198581C600E45A44 /* WWHTMLParser.m */,
 			);
 			path = whoswho;
 			sourceTree = "<group>";
@@ -168,6 +195,27 @@
 				05A8A1A5198533FF0096D508 /* WWModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		05D5A35F1985685D00E45A44 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				05D5A3601985685D00E45A44 /* TFHpple.h */,
+				05D5A3611985685D00E45A44 /* TFHpple.m */,
+				05D5A3621985685D00E45A44 /* TFHppleElement.h */,
+				05D5A3631985685D00E45A44 /* TFHppleElement.m */,
+				05D5A3641985685D00E45A44 /* XPath */,
+			);
+			path = hpple;
+			sourceTree = "<group>";
+		};
+		05D5A3641985685D00E45A44 /* XPath */ = {
+			isa = PBXGroup;
+			children = (
+				05D5A3651985685D00E45A44 /* XPathQuery.h */,
+				05D5A3661985685D00E45A44 /* XPathQuery.m */,
+			);
+			path = XPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D5A36E198581C600E45A44 /* WWHTMLParser.m in Sources */,
 				05A8A1A6198533FF0096D508 /* WWModel.m in Sources */,
+				05D5A3681985685D00E45A44 /* TFHppleElement.m in Sources */,
+				05D5A3691985685D00E45A44 /* XPathQuery.m in Sources */,
+				05D5A3671985685D00E45A44 /* TFHpple.m in Sources */,
 				054D66651984089800FE29CA /* WWAppDelegate.m in Sources */,
 				05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */,
 				054D66611984089800FE29CA /* main.m in Sources */,
@@ -399,6 +451,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whoswho/whoswho-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "whoswho/whoswho-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -412,6 +469,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whoswho/whoswho-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "whoswho/whoswho-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

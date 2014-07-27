@@ -1,5 +1,5 @@
 //
-//  WWModel.h
+//  WWHTMLParser.h
 //  whoswho
 //
 //  Created by Pauline on 27/07/2014.
@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WWEmployee.h"
+#import "TFHpple.h"
+#import "WWModel.h"
 
-@interface WWModel : NSObject
+@interface WWHTMLParser : NSObject
 
-@property (strong, nonatomic) NSMutableArray *employees;
-
-+ (id)sharedInstance;
+-(void)parse;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "WWViewController.h"
+#import "WWHTMLParser.h"
 
 @interface WWViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    WWHTMLParser *parser = [[WWHTMLParser alloc] init];
+    [parser parse];
 }
 
 - (void)didReceiveMemoryWarning
