@@ -44,12 +44,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"EmployeeCell";
+    static NSString *tableIdentifier = @"EmployeeCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableIdentifier];
+        UIImageView *employeeImageView = (UIImageView*)[cell viewWithTag:101];
+        employeeImageView.layer.cornerRadius = employeeImageView.frame.size.height /2;
+        employeeImageView.layer.masksToBounds = YES;
+        employeeImageView.layer.borderWidth = 0;
     }
     
     WWEmployee *anEmployee = [[[WWModel sharedInstance] employees] objectAtIndex:indexPath.row];
@@ -58,11 +62,7 @@
     employeeBackImageView.image = anEmployee.bluredPicture;
     
     UIImageView *employeeImageView = (UIImageView*)[cell viewWithTag:101];
-    employeeImageView.layer.cornerRadius = employeeImageView.frame.size.height /2;
-    employeeImageView.layer.masksToBounds = YES;
-    employeeImageView.layer.borderWidth = 0;
     employeeImageView.image = anEmployee.picture;
-    
     
     UILabel *employeeNameLabel = (UILabel*)[cell viewWithTag:102];
     employeeNameLabel.text = anEmployee.name;
@@ -74,7 +74,6 @@
     employeeBioTextView.text = anEmployee.biography;
     [employeeBioTextView setTextAlignment:NSTextAlignmentCenter];
     [employeeBioTextView setFont:[UIFont fontWithName:@"STHeitiSC-Light" size:14]];
-    
     
     return cell;
 }

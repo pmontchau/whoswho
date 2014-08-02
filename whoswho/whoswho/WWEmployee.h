@@ -11,10 +11,10 @@
 @interface WWEmployee : NSObject
 
 @property (strong, nonatomic) UIImage   *picture;
+@property (strong, nonatomic) UIImage   *bluredPicture;
 @property (strong, nonatomic) NSString  *name;
 @property (strong, nonatomic) NSString  *jobTitle;
 @property (strong, nonatomic) NSString  *biography;
 
--(UIImage*)bluredPicture;
 
 @end
