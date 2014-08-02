@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A9W-Lo-O2l">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="487"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A9W-Lo-O2l">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.15987723209999999" green="0.15987723209999999" blue="0.15987723209999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -81,6 +81,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A9W-Lo-O2l" secondAttribute="trailing" id="CgI-ph-lYY"/>
+                            <constraint firstItem="A9W-Lo-O2l" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Jt2-Ln-CMv"/>
+                            <constraint firstItem="A9W-Lo-O2l" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="eNE-0a-enJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="A9W-Lo-O2l" secondAttribute="bottom" id="h91-fs-erU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Who's Who ?" id="zck-Gi-sg5"/>
                     <connections>

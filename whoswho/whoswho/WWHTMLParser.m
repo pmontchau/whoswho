@@ -17,7 +17,6 @@
     NSString *htmlString = [[NSString alloc] initWithContentsOfURL:url
                                                       usedEncoding:&encoding
                                                              error:&error];
-    //NSLog(@"htmlString : %@", htmlString);
     return htmlString;
 }
 
@@ -38,8 +37,6 @@
         NSString *nameStr = [[element firstChildWithTagName:@"h3"] text];
         NSString *jobStr = [[element firstChildWithTagName:@"p"] text];
         NSString *bioStr = [[element firstChildWithClassName:@"user-description"] text];
-        //NSLog(@"-----------------");
-        //NSLog(@"name : %@\n job : %@\n bio: %@\n img : %@\n", nameStr, jobStr, bioStr, imageURLStr);
         
         if (nameStr)
             [anEmployee setName:nameStr];

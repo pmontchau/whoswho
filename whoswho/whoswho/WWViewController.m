@@ -27,6 +27,7 @@
 }
 
 - (void)refreshTable {
+    // Pull to refresh functionality
     WWHTMLParser *parser = [[WWHTMLParser alloc] init];
     [parser parse];
     [employeeTableView reloadData];
@@ -50,17 +51,15 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableIdentifier];
-        UIImageView *employeeImageView = (UIImageView*)[cell viewWithTag:101];
-        employeeImageView.layer.cornerRadius = employeeImageView.frame.size.height /2;
-        employeeImageView.layer.masksToBounds = YES;
-        employeeImageView.layer.borderWidth = 0;
     }
     
     WWEmployee *anEmployee = [[[WWModel sharedInstance] employees] objectAtIndex:indexPath.row];
     
+    // The blured back employee image
     UIImageView *employeeBackImageView = (UIImageView*)[cell viewWithTag:100];
     employeeBackImageView.image = anEmployee.bluredPicture;
     
+    // The rounded employee image
     UIImageView *employeeImageView = (UIImageView*)[cell viewWithTag:101];
     employeeImageView.image = anEmployee.picture;
     
