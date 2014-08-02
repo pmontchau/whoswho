@@ -13,5 +13,6 @@
 @interface WWHTMLParser : NSObject
 
 -(void)parse;
+-(NSMutableArray*)parseHTMLString:(NSString*)htmlString;
 
 @end

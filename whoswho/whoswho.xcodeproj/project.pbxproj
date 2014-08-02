@@ -21,6 +21,9 @@
 		054D66761984089800FE29CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D66581984089800FE29CA /* UIKit.framework */; };
 		054D667E1984089800FE29CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 054D667C1984089800FE29CA /* InfoPlist.strings */; };
 		054D66801984089800FE29CA /* whoswhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D667F1984089800FE29CA /* whoswhoTests.m */; };
+		0553B74D198D679400FAE4DA /* WWEmployeeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553B74C198D679400FAE4DA /* WWEmployeeTestCase.m */; };
+		0553B74F198D6CAB00FAE4DA /* WWHTMLParserTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553B74E198D6CAB00FAE4DA /* WWHTMLParserTestCase.m */; };
+		0553B751198D6D5300FAE4DA /* our-team.htm in Resources */ = {isa = PBXBuildFile; fileRef = 0553B750198D6D5300FAE4DA /* our-team.htm */; };
 		05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A2198532E30096D508 /* WWEmployee.m */; };
 		05A8A1A6198533FF0096D508 /* WWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A5198533FF0096D508 /* WWModel.m */; };
 		05D5A3671985685D00E45A44 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5A3611985685D00E45A44 /* TFHpple.m */; };
@@ -60,6 +63,9 @@
 		054D667B1984089800FE29CA /* whoswhoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whoswhoTests-Info.plist"; sourceTree = "<group>"; };
 		054D667D1984089800FE29CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		054D667F1984089800FE29CA /* whoswhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whoswhoTests.m; sourceTree = "<group>"; };
+		0553B74C198D679400FAE4DA /* WWEmployeeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployeeTestCase.m; sourceTree = "<group>"; };
+		0553B74E198D6CAB00FAE4DA /* WWHTMLParserTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHTMLParserTestCase.m; sourceTree = "<group>"; };
+		0553B750198D6D5300FAE4DA /* our-team.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "our-team.htm"; sourceTree = "<group>"; };
 		05A8A1A1198532E30096D508 /* WWEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWEmployee.h; sourceTree = "<group>"; };
 		05A8A1A2198532E30096D508 /* WWEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployee.m; sourceTree = "<group>"; };
 		05A8A1A4198533FF0096D508 /* WWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWModel.h; sourceTree = "<group>"; };
@@ -169,8 +175,11 @@
 		054D66791984089800FE29CA /* whoswhoTests */ = {
 			isa = PBXGroup;
 			children = (
+				0553B750198D6D5300FAE4DA /* our-team.htm */,
 				054D667F1984089800FE29CA /* whoswhoTests.m */,
 				054D667A1984089800FE29CA /* Supporting Files */,
+				0553B74C198D679400FAE4DA /* WWEmployeeTestCase.m */,
+				0553B74E198D6CAB00FAE4DA /* WWHTMLParserTestCase.m */,
 			);
 			path = whoswhoTests;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054D667E1984089800FE29CA /* InfoPlist.strings in Resources */,
+				0553B751198D6D5300FAE4DA /* our-team.htm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0553B74F198D6CAB00FAE4DA /* WWHTMLParserTestCase.m in Sources */,
 				054D66801984089800FE29CA /* whoswhoTests.m in Sources */,
+				0553B74D198D679400FAE4DA /* WWEmployeeTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

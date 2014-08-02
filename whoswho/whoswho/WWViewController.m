@@ -73,8 +73,8 @@
     UITextView *employeeBioTextView = (UITextView*)[cell viewWithTag:104];
     employeeBioTextView.text = anEmployee.biography;
     [employeeBioTextView setTextAlignment:NSTextAlignmentCenter];
-    [employeeBioTextView setFont:[UIFont fontWithName:@"STHeitiSC-Light" size:14]];
-    
+    [employeeBioTextView setFont:[UIFont fontWithName:@"STHeitiSC-Light" size:13]];
+
     return cell;
 }
 

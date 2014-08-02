@@ -23,7 +23,11 @@
 
 -(void)parse{
     NSString *htmlString = [self getHTMLStringFromURLString:@"http://www.theappbusiness.com/our-team/"];
-    
+    [[WWModel sharedInstance] setEmployees:[self parseHTMLString:htmlString]];
+}
+
+
+-(NSMutableArray*)parseHTMLString:(NSString*)htmlString{
     TFHpple * doc       = [[TFHpple alloc] initWithHTMLData:[htmlString dataUsingEncoding:NSUTF8StringEncoding]];
     NSArray * elements  = [doc searchWithXPathQuery:@"//div[@class='col col2']"];
     NSMutableArray *employees = [[NSMutableArray alloc] init];
@@ -51,7 +55,7 @@
         }
         [employees addObject:anEmployee];
     }
-    [[WWModel sharedInstance] setEmployees:employees];
+    return employees;
 }
 
 @end
