@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSString  *jobTitle;
 @property (strong, nonatomic) NSString  *biography;
 
+-(UIImage*)bluredPicture;
+
 @end

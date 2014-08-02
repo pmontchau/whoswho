@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WWModel.h"
 
-@interface WWViewController : UIViewController
+@interface WWViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
+    UIRefreshControl *refreshControl;
+    IBOutlet UITableView *employeeTableView;
+}
 
 @end

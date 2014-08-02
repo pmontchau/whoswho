@@ -144,15 +144,13 @@
 			children = (
 				051A6BB8198566CC006AB890 /* Libs */,
 				05A8A1A0198532BE0096D508 /* Model */,
+				0553B74A198D22A200FAE4DA /* Utils */,
+				0553B74B198D22F400FAE4DA /* View Controllers */,
 				054D66631984089800FE29CA /* WWAppDelegate.h */,
 				054D66641984089800FE29CA /* WWAppDelegate.m */,
 				054D66661984089800FE29CA /* Main.storyboard */,
-				054D66691984089800FE29CA /* WWViewController.h */,
-				054D666A1984089800FE29CA /* WWViewController.m */,
 				054D666C1984089800FE29CA /* Images.xcassets */,
 				054D665B1984089800FE29CA /* Supporting Files */,
-				05D5A36C198581C600E45A44 /* WWHTMLParser.h */,
-				05D5A36D198581C600E45A44 /* WWHTMLParser.m */,
 			);
 			path = whoswho;
 			sourceTree = "<group>";
@@ -184,6 +182,24 @@
 				054D667C1984089800FE29CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0553B74A198D22A200FAE4DA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				05D5A36C198581C600E45A44 /* WWHTMLParser.h */,
+				05D5A36D198581C600E45A44 /* WWHTMLParser.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		0553B74B198D22F400FAE4DA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				054D66691984089800FE29CA /* WWViewController.h */,
+				054D666A1984089800FE29CA /* WWViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		05A8A1A0198532BE0096D508 /* Model */ = {
