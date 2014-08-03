@@ -24,6 +24,10 @@
 		0553B74D198D679400FAE4DA /* WWEmployeeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553B74C198D679400FAE4DA /* WWEmployeeTestCase.m */; };
 		0553B74F198D6CAB00FAE4DA /* WWHTMLParserTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553B74E198D6CAB00FAE4DA /* WWHTMLParserTestCase.m */; };
 		0553B751198D6D5300FAE4DA /* our-team.htm in Resources */ = {isa = PBXBuildFile; fileRef = 0553B750198D6D5300FAE4DA /* our-team.htm */; };
+		0553B753198E7C0200FAE4DA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0553B752198E7C0200FAE4DA /* CoreData.framework */; };
+		0553B757198E7CB900FAE4DA /* WWCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553B756198E7CB900FAE4DA /* WWCoreDataHelper.m */; };
+		0553B75A198E80AA00FAE4DA /* WhosWho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0553B758198E80AA00FAE4DA /* WhosWho.xcdatamodeld */; };
+		0553B75D198E824E00FAE4DA /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553B75C198E824E00FAE4DA /* Employee.m */; };
 		05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A2198532E30096D508 /* WWEmployee.m */; };
 		05A8A1A6198533FF0096D508 /* WWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8A1A5198533FF0096D508 /* WWModel.m */; };
 		05D5A3671985685D00E45A44 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5A3611985685D00E45A44 /* TFHpple.m */; };
@@ -66,6 +70,12 @@
 		0553B74C198D679400FAE4DA /* WWEmployeeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployeeTestCase.m; sourceTree = "<group>"; };
 		0553B74E198D6CAB00FAE4DA /* WWHTMLParserTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHTMLParserTestCase.m; sourceTree = "<group>"; };
 		0553B750198D6D5300FAE4DA /* our-team.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "our-team.htm"; sourceTree = "<group>"; };
+		0553B752198E7C0200FAE4DA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0553B755198E7CB900FAE4DA /* WWCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCoreDataHelper.h; sourceTree = "<group>"; };
+		0553B756198E7CB900FAE4DA /* WWCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCoreDataHelper.m; sourceTree = "<group>"; };
+		0553B759198E80AA00FAE4DA /* WhosWho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhosWho.xcdatamodel; sourceTree = "<group>"; };
+		0553B75B198E824E00FAE4DA /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		0553B75C198E824E00FAE4DA /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		05A8A1A1198532E30096D508 /* WWEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWEmployee.h; sourceTree = "<group>"; };
 		05A8A1A2198532E30096D508 /* WWEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployee.m; sourceTree = "<group>"; };
 		05A8A1A4198533FF0096D508 /* WWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWModel.h; sourceTree = "<group>"; };
@@ -86,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0553B753198E7C0200FAE4DA /* CoreData.framework in Frameworks */,
 				05D5A36B1985807100E45A44 /* libxml2.dylib in Frameworks */,
 				054D66571984089800FE29CA /* CoreGraphics.framework in Frameworks */,
 				054D66591984089800FE29CA /* UIKit.framework in Frameworks */,
@@ -136,6 +147,7 @@
 		054D66531984089800FE29CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0553B752198E7C0200FAE4DA /* CoreData.framework */,
 				05D5A36A1985807100E45A44 /* libxml2.dylib */,
 				054D66541984089800FE29CA /* Foundation.framework */,
 				054D66561984089800FE29CA /* CoreGraphics.framework */,
@@ -211,9 +223,22 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		0553B754198E7C4E00FAE4DA /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				0553B755198E7CB900FAE4DA /* WWCoreDataHelper.h */,
+				0553B756198E7CB900FAE4DA /* WWCoreDataHelper.m */,
+				0553B758198E80AA00FAE4DA /* WhosWho.xcdatamodeld */,
+				0553B75B198E824E00FAE4DA /* Employee.h */,
+				0553B75C198E824E00FAE4DA /* Employee.m */,
+			);
+			name = Coredata;
+			sourceTree = "<group>";
+		};
 		05A8A1A0198532BE0096D508 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0553B754198E7C4E00FAE4DA /* Coredata */,
 				05A8A1A1198532E30096D508 /* WWEmployee.h */,
 				05A8A1A2198532E30096D508 /* WWEmployee.m */,
 				05A8A1A4198533FF0096D508 /* WWModel.h */,
@@ -344,11 +369,14 @@
 			files = (
 				05D5A36E198581C600E45A44 /* WWHTMLParser.m in Sources */,
 				05A8A1A6198533FF0096D508 /* WWModel.m in Sources */,
+				0553B757198E7CB900FAE4DA /* WWCoreDataHelper.m in Sources */,
 				05D5A3681985685D00E45A44 /* TFHppleElement.m in Sources */,
 				05D5A3691985685D00E45A44 /* XPathQuery.m in Sources */,
+				0553B75A198E80AA00FAE4DA /* WhosWho.xcdatamodeld in Sources */,
 				05D5A3671985685D00E45A44 /* TFHpple.m in Sources */,
 				054D66651984089800FE29CA /* WWAppDelegate.m in Sources */,
 				05A8A1A3198532E30096D508 /* WWEmployee.m in Sources */,
+				0553B75D198E824E00FAE4DA /* Employee.m in Sources */,
 				054D66611984089800FE29CA /* main.m in Sources */,
 				054D666B1984089800FE29CA /* WWViewController.m in Sources */,
 			);
@@ -579,6 +607,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0553B758198E80AA00FAE4DA /* WhosWho.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0553B759198E80AA00FAE4DA /* WhosWho.xcdatamodel */,
+			);
+			currentVersion = 0553B759198E80AA00FAE4DA /* WhosWho.xcdatamodel */;
+			path = WhosWho.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 054D66491984089800FE29CA /* Project object */;
 }

@@ -16,5 +16,6 @@
 @property (strong, nonatomic) NSString  *jobTitle;
 @property (strong, nonatomic) NSString  *biography;
 
+-(void)setPicture:(UIImage *)pic blur:(BOOL)blur round:(BOOL)round;
 
 @end

@@ -22,7 +22,13 @@
 
 -(void)parse{
     NSString *htmlString = [self getHTMLStringFromURLString:@"http://www.theappbusiness.com/our-team/"];
-    [[WWModel sharedInstance] setEmployees:[self parseHTMLString:htmlString]];
+    if (htmlString && ![htmlString isEqualToString:@""]){
+        [[WWModel sharedInstance] setEmployees:[self parseHTMLString:htmlString]];
+        [[WWModel sharedInstance] saveEmployees];
+    }
+    else{
+        [[WWModel sharedInstance] fillEmployeesWithSavedData];
+    }
 }
 
 
@@ -48,7 +54,7 @@
             NSURL *url = [NSURL URLWithString:imageURLStr];
             NSData *data = [NSData dataWithContentsOfURL:url];
             UIImage *img = [[UIImage alloc] initWithData:data];
-            [anEmployee setPicture:img];
+            [anEmployee setPicture:img blur:YES round:YES];
         }
         [employees addObject:anEmployee];
     }

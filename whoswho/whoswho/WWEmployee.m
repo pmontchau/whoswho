@@ -41,10 +41,14 @@
     return roundedPic;
 }
 
--(void)setPicture:(UIImage *)pic{
+-(void)setPicture:(UIImage *)pic blur:(BOOL)blur round:(BOOL)round{
     if (pic){
-        _picture = [self roundPicture:pic];
-        _bluredPicture = [self blurPicture:pic];
+        if (round == YES)
+            _picture = [self roundPicture:pic];
+        else
+            _picture = pic;
+        if (blur == YES)
+            _bluredPicture = [self blurPicture:pic];
     }
 }
 

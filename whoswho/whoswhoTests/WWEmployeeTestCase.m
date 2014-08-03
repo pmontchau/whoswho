@@ -38,7 +38,7 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    [anEmployee setPicture:image];
+    [anEmployee setPicture:image blur:YES round:YES];
     
     XCTAssertNotNil([anEmployee picture], @"Must not be nil");
     XCTAssertEqual([anEmployee picture].size.width, 100, @"Must be equal to 100");
